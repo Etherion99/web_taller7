@@ -1,0 +1,121 @@
+#main-container{
+    background-color:#00897B;
+}
+
+form h1 {
+    color: #00897B;
+}
+
+.form-control:focus,
+.form-select:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    background-color: none !important;
+    z-index: 0 !important;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+    transition: 1.5s;
+    color: #8B8B8B;
+}
+
+.btn-main {
+    background-color: #00897B;
+    color: white;
+}
+
+.btn-main:hover {
+    color: white;
+    box-shadow: 0 0 10px 1px rgba(57, 76, 171, .5);
+}
+
+.form-control:not(.is-invalid, .is-valid):focus~.input-group-text,
+.form-select:not(.is-invalid, .is-valid):focus~.input-group-text {
+    background-color: #00897B;
+    border-color: #00897B;
+    color: white;
+    transition: 1.5s;
+}
+
+.form-control:not(.is-invalid, .is-valid)~.focus-border:before,
+.form-control:not(.is-invalid, .is-valid)~.focus-border:after,
+.form-select:not(.is-invalid, .is-valid)~.focus-border:before,
+.form-select:not(.is-invalid, .is-valid)~.focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00897B;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.form-control:not(.is-invalid, .is-valid)~.focus-border:after,
+.form-select:not(.is-invalid, .is-valid)~.focus-border:after {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    transition-delay: 0.6s;
+}
+
+.form-control:not(.is-invalid, .is-valid)~.focus-border i:before,
+.form-control:not(.is-invalid, .is-valid)~.focus-border i:after,
+.form-select:not(.is-invalid, .is-valid)~.focus-border i:before,
+.form-select:not(.is-invalid, .is-valid)~.focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #00897B;
+    transition: 0.2s;
+}
+
+.form-control:not(.is-invalid, .is-valid)~.focus-border i:after,
+.form-select:not(.is-invalid, .is-valid)~.focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transition-delay: 0.4s;
+}
+
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border:before,
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border:after,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border:before,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border:after {
+    width: 100%;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border:after,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border:after {
+    transition-delay: 0.2s;
+}
+
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border i:before,
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border i:after,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border i:before,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border i:after {
+    height: 100%;
+    transition: 0.2s;
+}
+
+.form-control:not(.is-invalid, .is-valid):focus~.focus-border i:after,
+.form-select:not(.is-invalid, .is-valid):focus~.focus-border i:after {
+    transition-delay: 0.4s;
+}
+
+.inputrange{
+    width: 60%;
+    
+}
+
+
