@@ -11,6 +11,21 @@ $(document).ready(function(){
         });
     }
 
+    function Departamento(){
+        $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data){
+            data.forEach(function(obj){
+                $('#department').append($('<option>' ,{
+                    'value': obj.departamento,
+                    'text': obj.departamento
+                }));
+            })
+
+        });
+
+    }
+
+    Departamento();
+
 });
 
 
