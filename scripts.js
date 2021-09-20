@@ -26,8 +26,30 @@ $(document).ready(function(){
 
     Departamento();
 
-});
+    function Municipio()
+    {
+        $('#municipio').empty();
+       let dpto = $("#department").val();
+        $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data)
+        {
+            data.forEach(function(obj)
+            {
+                if(obj.departamento===dpto)
+                {
+                    let mnp = obj.ciudades;
+                    mnp.forEach(element => $('#municipio').append($('<option>',{
+                        'value': element,
+                        'text': element
+                    })));
+                }
+            })
+        });
+    }
+    
+    $("#department").on("change",Municipio);
 
+    
+});
 
 
 
